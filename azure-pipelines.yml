@@ -1,0 +1,24 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: 3.5
+    architecture: 'x64'
+
+- script: |
+    pip install pyang
+  displayName: 'Install prerequisites'
+
+- script: |
+    pyang *.yang
+  displayName: 'Get pyang version'
+
+- script: |
+    cd model/Common
+    pyang *.yang
+  displayName: 'Validate Common'
