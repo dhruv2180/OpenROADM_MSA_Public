@@ -17,4 +17,4 @@ steps:
 - script: |
     pyang *.yang
   displayName: 'go to Common'
-  workingDirectory: model/Common
+  workingDirectory: $(Build.SourcesDirectory)/model/Common
