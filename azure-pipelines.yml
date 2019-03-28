@@ -20,16 +20,16 @@ steps:
   workingDirectory: $(Build.SourcesDirectory)/model/Common
 
 - script: |
-    pyang *.yang -p ../Common
+    pyang *.yang -p ../Common -p ../../External
   displayName: 'check Device'
   workingDirectory: $(Build.SourcesDirectory)/model/Device 
 
 - script: |
-    pyang *.yang -p ../Common
+    pyang *.yang -p ../Common -p ../../External
   displayName: 'Check Network'
   workingDirectory: $(Build.SourcesDirectory)/model/Network
 
 - script: |
-    pyang *.yang -p ../Common
+    pyang *.yang -p ../Common -p ../../External
   displayName: 'Check Service'
   workingDirectory: $(Build.SourcesDirectory)/model/Service
