@@ -19,6 +19,5 @@ steps:
   displayName: 'Get pyang version'
 
 - script: |
-    cd model/Common
-    pyang *.yang
+    pyang $(Build.SourcesDirectory)/model/Common/*.yang
   displayName: 'Validate Common'
