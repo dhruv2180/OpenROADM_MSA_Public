@@ -15,5 +15,5 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    cd model/Common/*.yang
+    pyang model/Common/*.yang
   displayName: 'go to Common'
