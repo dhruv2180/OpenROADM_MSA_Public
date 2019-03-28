@@ -15,9 +15,5 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    cd model/Common
+    cd model/Common/*.yang
   displayName: 'go to Common'
-
-- script: |
-    pyang *.yang
-  displayName: 'Validate Common'
