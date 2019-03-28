@@ -15,9 +15,6 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    ls
-  displayName: 'check current directory'
-
-- script: |
-    pyang $(Build.SourcesDirectory)/model/Common/*.yang
+    cd model/Common
+    pyang *.yang
   displayName: 'Validate Common'
