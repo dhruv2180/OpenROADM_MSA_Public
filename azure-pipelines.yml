@@ -15,21 +15,21 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    pyang -f tree *.yang
+    pyang *.yang
   displayName: 'check common'
   workingDirectory: $(Build.SourcesDirectory)/model/Common
 
 - script: |
-    pyang -f tree *.yang
+    pyang *.yang
   displayName: 'check Device'
   workingDirectory: $(Build.SourcesDirectory)/model/Device
 
 - script: |
-    pyang -f tree *.yang
+    pyang *.yang
   displayName: 'Check Network'
   workingDirectory: $(Build.SourcesDirectory)/model/Network
 
 - script: |
-    pyang -f tree *.yang
+    pyang *.yang
   displayName: 'Check Service'
   workingDirectory: $(Build.SourcesDirectory)/model/Service
