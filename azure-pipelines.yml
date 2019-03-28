@@ -16,5 +16,8 @@ steps:
 
 - script: |
     cd model/Common
+  displayName: 'go to Common'
+
+- script: |
     pyang *.yang
   displayName: 'Validate Common'
