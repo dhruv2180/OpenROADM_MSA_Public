@@ -15,6 +15,6 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    pyang org-openroadm-alarm.yang
+    pyang -f tree rg-openroadm-alarm.yang
   displayName: 'go to Common'
   workingDirectory: $(Build.SourcesDirectory)/model/Common
