@@ -15,8 +15,8 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    pyang *.yang
-  displayName: 'Get pyang version'
+    ls
+  displayName: 'check current directory'
 
 - script: |
     pyang $(Build.SourcesDirectory)/Common/*.yang
