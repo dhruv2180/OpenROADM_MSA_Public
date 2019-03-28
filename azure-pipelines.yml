@@ -19,5 +19,5 @@ steps:
   displayName: 'check current directory'
 
 - script: |
-    pyang $(Build.SourcesDirectory)/Common/*.yang
+    pyang $(Build.SourcesDirectory)/model/Common/*.yang
   displayName: 'Validate Common'
